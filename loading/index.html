@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loading" data-model-id="27:149">
+      <img class="token" src="img/token.png" />
+      <div class="text-wrapper">Best Money Cases</div>
+      <div class="div">Developed in 2025</div>
+      <div class="load-icon"><img class="icon" src="img/icon-1.svg" /></div>
+      <p class="authentication">
+        <span class="span">Authentication </span> <span class="text-wrapper-2">succesful</span>
+      </p>
+      <div class="bot"><div class="text-wrapper-3">@bot</div></div>
+    </div>
+
+
+    <script>
+  // Проверка, что мини-приложение запущено в Telegram
+  if (window.Telegram?.WebApp) {
+    const tg = window.Telegram.WebApp;
+
+    tg.expand(); // Разворачиваем на весь экран
+
+    // Получаем данные пользователя
+    const user = tg.initDataUnsafe?.user;
+    if (user) {
+      document.querySelector('.text-wrapper').innerText = `Привет, ${user.first_name}!`;
+    }
+
+    // Отправка данных боту при клике
+    const botDiv = document.querySelector('.bot');
+    botDiv.addEventListener('click', () => {
+      tg.sendData(JSON.stringify({clicked: true, user: user}));
+    });
+  } else {
+    alert("Открыто не в Telegram!");
+  }
+</script>
+
+  </body>
+</html>
