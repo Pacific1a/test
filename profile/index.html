@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="profile" data-model-id="36:1204">
+      <div class="acc-info">
+        <div class="avatar"></div>
+        <div class="nick-tg-ID">
+          <div class="nick"><div class="text-wrapper">Nick</div></div>
+          <div class="element"><div class="div">#1234567890</div></div>
+        </div>
+      </div>
+      <div class="balance">
+        <div class="div-2">
+          <div class="text-wrapper-2">Balance</div>
+          <div class="amount-balance">
+            <div class="icon">
+              <div class="overlap-group">
+                <div class="ellipse"></div>
+                <img class="img" src="img/icon.svg" />
+                <div class="text-wrapper-3">₽</div>
+              </div>
+            </div>
+            <div class="div-wrapper"><div class="text-wrapper-4">0.00</div></div>
+          </div>
+        </div>
+        <div class="deposit-button"><div class="text-wrapper-5">Deposit</div></div>
+      </div>
+      <div class="follow"><p class="text-wrapper-5">Follow us on social media!</p></div>
+      <div class="invite-banner">
+        <img class="hand" src="img/hand.png" />
+        <div class="frame">
+          <div class="frame-2">
+            <div class="invite-icon">
+              <div class="div-3">
+                <img class="vector" src="img/vector.svg" />
+                <img class="vector-2" src="img/vector-1.svg" />
+                <img class="vector-3" src="img/vector-2.svg" />
+              </div>
+            </div>
+            <div class="text-wrapper-6">Invite Friends</div>
+          </div>
+          <div class="invite-button"><div class="text-wrapper-7">Invite</div></div>
+        </div>
+      </div>
+      <div class="transaction">
+        <div class="frame-3">
+          <div class="text-wrapper-8">Your transactions:</div>
+          <div class="show-button"><div class="text-wrapper-9">Show available</div></div>
+        </div>
+        <div class="transaction-2">
+          <div class="div-2">
+            <div class="text-wrapper-10">21:00 16.08.2025</div>
+            <div class="text-wrapper-11">From EasyPay</div>
+          </div>
+          <div class="element-2"><div class="text-wrapper-12">+200₽</div></div>
+        </div>
+      </div>
+      <div class="menu">
+        <img class="select" src="img/select.png" />
+        <a href="../main/index.html" class="main">
+          <img class="mask-group" src="img/mask-group.png" />
+          <div class="text-wrapper-13">Main</div>
+        </a>
+        <a href="../upgrade/index.html" class="upgrade">
+          <div class="icon-2"></div>
+          <div class="text-wrapper-14">Upgrade</div>
+        </a>
+        <a href="../gamee/index.html" class="game">
+          <div class="icon-3"></div>
+          <div class="text-wrapper-15">Game</div>
+        </a>
+        <a href="../swap/index.html" class="swap">
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group-2">
+              <img class="vector-4" src="img/vector-5.svg" /> <img class="vector-5" src="img/vector-6.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-14">Swap</div>
+        </a>
+        <a href="#" class="div-4">
+          <div class="div-3">
+            <img class="vector-6" src="img/vector-7.svg" /> <img class="vector-7" src="img/vector-8.svg" />
+          </div>
+          <div class="text-wrapper-14">Profile</div>
+        </a>
+      </div>
+    </div>
+
+
+
+    <script>
+      const tg = window.Telegram.WebApp;
+  
+      // запрет изменения размеров
+      tg.setResizable(false);
+  
+      // фиксируем размер окна
+      tg.expand(); // растягиваем на доступную область
+    </script>
+  </body>
+</html>

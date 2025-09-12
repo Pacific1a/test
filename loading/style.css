@@ -1,10 +1,11 @@
 .loading {
+  width: 100%;
+  height: 100%;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 22px;
-  padding: 21px 62px;
   position: relative;
   background-color: #151414;
 }
@@ -14,6 +15,8 @@
   align-self: stretch;
   width: 100%;
   height: 331px;
+  object-fit: contain;
+  animation: rotate 10s linear infinite;
 }
 
 .loading .text-wrapper {

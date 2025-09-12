@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="upgrade" data-model-id="35:189">
+      <header class="header">
+        <div class="account-info">
+          <div class="avatar"></div>
+          <div class="nickname"><div class="text-wrapper">Nickname</div></div>
+        </div>
+        <div class="add-funds">
+          <img class="img" src="img/image.svg" />
+          <div class="div">Add Funds</div>
+        </div>
+        <div class="balance">
+          <div class="element"><div class="text-wrapper-2">0.00</div></div>
+          <div class="overlap-group">
+            <div class="ellipse"></div>
+            <img class="icon" src="img/icon.svg" />
+            <div class="text-wrapper-3">₽</div>
+            <div class="ellipse-2"></div>
+            <img class="token" src="img/token.png" />
+          </div>
+          <div class="div-wrapper"><div class="text-wrapper-4">0</div></div>
+        </div>
+      </header>
+      <div class="streak">
+        <div class="frame">
+          <div class="text-wrapper-5">Live</div>
+          <div class="circle"></div>
+        </div>
+        <img class="img-2" src="img/very-high-prize.svg" />
+        <img class="img-2" src="img/High Prize.svg" />
+        <img class="img-2" src="img/Medium Prize.svg" />
+        <img class="img-2" src="img/low-prize.svg" />
+        <img class="img-2" src="img/Very Low Prize.svg" />
+        <img class="low-prize" src="img/Ultra Low Prize.svg" />
+      </div>
+      <div class="bet-amount-desired">
+        <div class="frame-2">
+          <div class="text-wrapper-7">Bet Amount:</div>
+          <div class="info-amount">
+            <img class="token-2" src="img/token-2.png" />
+            <div class="text-wrapper-8">0</div>
+          </div>
+        </div>
+        <div class="frame-3">
+          <p class="desired-prize">
+            <span class="span">De</span>
+            <span class="text-wrapper-9">s</span>
+            <span class="span">ired prize:</span>
+          </p>
+          <div class="info-amount-2">
+            <img class="token-2" src="img/token-2.png" />
+            <div class="text-wrapper-8">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="overlap-2">
+          <div class="group"><img class="ellipse-3" src="img/ellipse-15.png" /></div>
+          <div class="chance">
+            <p class="p"><span class="text-wrapper-10">0</span> <span class="text-wrapper-11">%</span></p>
+          </div>
+          <div class="arrow"><img class="vector" src="img/vector-1.svg" /></div>
+          <div class="group-2">
+            <div class="text-wrapper-12">50%</div>
+            <div class="text-wrapper-13">50%</div>
+            <div class="text-wrapper-14">0%</div>
+            <div class="element-4">
+              <img class="linked-vector" src="img/linked-vector-1.svg" />
+              <div class="overlap-group-3">
+                <div class="copy">1</div>
+                <div class="copy-2">0</div>
+                <div class="copy-3">0</div>
+                <div class="copy-4">%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bet">
+        <div class="text-wrapper-15">Make your bet</div>
+        <div class="multiplier-button">
+          <div class="x"><div class="text-wrapper-16">x1.5</div></div>
+          <div class="x-2"><div class="text-wrapper-16">x2</div></div>
+          <div class="x-2"><div class="text-wrapper-16">x3</div></div>
+          <div class="x-2"><div class="text-wrapper-16">x5</div></div>
+          <div class="x-2"><div class="text-wrapper-16">x10</div></div>
+          <div class="x-2"><div class="text-wrapper-16">x20</div></div>
+        </div>
+        <div class="group-3">
+          <div class="amount-bet">
+            <div class="enter-bet-amount"><div class="text-wrapper-17">Enter bet amount:</div></div>
+            <div class="element-5"><div class="text-wrapper-18">0</div></div>
+          </div>
+          <button class="apply-button"><div class="text-wrapper-19">Apply</div></button>
+        </div>
+        <div class="upgrade-button"><div class="text-wrapper-20">Upgrade</div></div>
+      </div>
+      <div class="menu">
+        <img class="select" src="img/select.png" />
+        <a href="../main/index.html" class="main">
+          <img class="mask-group" src="img/mask-group-1.png" />
+          <div class="text-wrapper-21">Main</div>
+        </a>
+        <a href="#" class="div-2">
+          <div class="icon-3"></div>
+          <div class="text-wrapper-22">Upgrade</div>
+        </a>
+        <a href="../gamee/index.html" class="game-2">
+          <div class="icon-4"></div>
+          <div class="text-wrapper-23">Game</div>
+        </a>
+        <a href="../swap/index.html" class="swap">
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group-4">
+              <img class="vector-2" src="img/vector-4.svg" /> <img class="vector-3" src="img/vector-5.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-22">Swap</div>
+        </a>
+        <a href="../profile/index.html" class="profile">
+          <div class="icon-5">
+            <img class="vector-4" src="img/vector-6.svg" /> <img class="vector-5" src="img/vector-7.svg" />
+          </div>
+          <div class="text-wrapper-22">Profile</div>
+        </a>
+      </div>
+    </div>
+
+
+
+    <script>
+      const tg = window.Telegram.WebApp;
+  
+      // запрет изменения размеров
+      tg.setResizable(false);
+  
+      // фиксируем размер окна
+      tg.expand(); // растягиваем на доступную область
+    </script>
+  </body>
+</html>
