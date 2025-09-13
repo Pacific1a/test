@@ -12,8 +12,8 @@
       <div class="acc-info">
         <div class="avatar"></div>
         <div class="nick-tg-ID">
-          <div class="nick"><div class="text-wrapper">Nick</div></div>
-          <div class="element"><div class="div">#1234567890</div></div>
+          <div class="nick"><div class="text-wrapper">Loading...</div></div>
+          <div class="element"><div class="div">#Loading...</div></div>
         </div>
       </div>
       <div class="balance">
@@ -93,7 +93,11 @@
       </div>
     </div>
 
-
+    <!-- Подключаем Telegram WebApp API -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
+    <!-- Подключаем наш скрипт для работы с данными пользователя -->
+    <script src="telegram-user-data.js"></script>
 
     <script>
       const tg = window.Telegram.WebApp;
@@ -103,6 +107,18 @@
   
       // фиксируем размер окна
       tg.expand(); // растягиваем на доступную область
+
+      // Дополнительные настройки для конкретной страницы (если нужно)
+      document.addEventListener('DOMContentLoaded', function() {
+        // Можно добавить специфичную логику для этой страницы
+        
+        // Например, обновить данные через 2 секунды если не загрузились
+        setTimeout(() => {
+          if (window.TelegramUser && !window.TelegramUser.getUserId()) {
+            window.TelegramUser.refresh();
+          }
+        }, 2000);
+      });
     </script>
   </body>
 </html>
