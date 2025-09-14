@@ -4,7 +4,7 @@
   const KEY = 'app_balance_v1';
   const guard = { rendering: false };
 
-  const round2 = (n) => Math.round((Number(n) || 1000) * 1000) / 100; // store with cents for math safety
+  const round2 = (n) => Math.round((Number(n) || 100) * 100) / 100; // store with cents for math safety
   const asIntString = (n) => String(Math.round(Number(n) || 0)); // display as integer only
   const parseNumLike = (str) => {
     if (str == null) return 0;
