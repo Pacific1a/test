@@ -6,14 +6,13 @@
   gap: 10px;
   padding: 10px;
   position: relative;
-  background-color: #151414;
 }
 
 .main .header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 37px;
+  gap: 28px;
   position: relative;
   flex: 0 0 auto;
   background-color: transparent;
@@ -204,7 +203,7 @@
   width: 10px;
   height: 18px;
   top: 26px;
-  left: 24px;
+  left: -11px;
 }
 
 .main .text-wrapper-4 {
@@ -336,12 +335,6 @@
   padding: 8px 15px;
   position: relative;
   border-radius: 17px;
-  box-shadow: 0px 0px 55px #ff403f54;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 64, 62, 1) 0%,
-    rgba(255, 63, 95, 1) 100%
-  );
 }
 
 .main .frame-2 {
@@ -405,6 +398,13 @@
 }
 
 .main .ellipse-5 {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background-color: #fff5f538;
+  border-radius: 3px;
+}
+.main .ellipse-6 {
   position: relative;
   width: 6px;
   height: 6px;

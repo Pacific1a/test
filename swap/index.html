@@ -38,9 +38,6 @@
             <div class="circle"></div>
           </div>
           <img class="img-2" src="img/very-high-prize.svg" />
-          <div class="high-prize">
-            <div class="overlap-group-2"><div class="text-wrapper-6">3000</div></div>
-          </div>
           <img class="img-2" src="img/medium-prize.svg" />
           <img class="img-3" src="img/low-prize.svg" />
           <img class="img-3" src="img/very-low-prize.svg" />
@@ -74,7 +71,7 @@
       </div>
       <div class="menu">
         <img class="select" src="img/select.png" />
-        <a href="../main/index.html" class="main">
+        <a href="../index.html" class="main">
           <img class="mask-group" src="img/mask-group-1.png" />
           <div class="text-wrapper-10">Main</div>
         </a>
@@ -102,20 +99,9 @@
         </a>
       </div>
     </div>
-
- <!-- Подключаем Telegram WebApp API -->
- <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    
- <!-- Подключаем наш скрипт для работы с данными пользователя -->
- <script src="../telegram-user-data.js"></script>
-    <script>
-      const tg = window.Telegram.WebApp;
-  
-      // запрет изменения размеров
-      tg.setResizable(false);
-  
-      // фиксируем размер окна
-      tg.expand(); // растягиваем на доступную область
-    </script>
+    <script src="../global-balance.js"></script>
+  <script src="liveprize.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="../telegram-user-data.js"></script>
   </body>
 </html>
